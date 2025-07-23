@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  padding: 0 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navigation-items {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+  /* justify-content: space-between; */
+}
+
+.navigation-item {
+  margin: 0.5rem;
+}
+
+.portrait {
+  width: 300px;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+}
+
+.about-me-container {
+  display: flex;
+}
+
+.about-me-text-container {
+  margin-right: 1rem;
+}
+.about-me-text-container p {
+  margin: 1rem 0;
+}
+
+.about-me-card h2 {
+  font-size: 2rem;
+  margin: 5px 2px 0;
+}
+
+.about-me-card p {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+}
+
+a {
+  cursor: pointer;
+  color: #323232;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+details {
+  cursor: pointer;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+#skills-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Select all direct child elements of the skills-container */
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: 0.5rem;
+}
+
+.contact {
+  display: none;
+  border: 2px #323232 solid;
+  width: 2vw;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: aliceblue;
+}
+
+button:active {
+  transform: scale(0.95);
+  background-color: #3399ff;
+}
