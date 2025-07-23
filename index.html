@@ -1,9 +1,116 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <h2 id="callsign">BLINDMONKY</h2>
+      <ul class="navigation-items">
+        <li class="navigation-item"><a href="#">About Me</a></li>
+        <li class="navigation-item"><a href="#">Projects</a></li>
+        <li class="navigation-item"><a href="#">Skills</a></li>
+        <li class="navigation-item" id="contact">Contact</li>
+      </ul>
+      <div class="contact" id="contact-info">
+        <h4>Brad</h4>
+        <p>blindmonky@yahoo.com</p>
+        <p>
+          <a href="www.linkedin.com/in/bradley-marshal-cook-1b39a057"
+            >LinkedIn</a
+          >
+        </p>
+      </div>
+    </nav>
 
-<body>
-  <h1>Big Balls!</h1>
-  <p>Welcome blindmonky!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
-
+    <main>
+      <section id="about-me">
+        <div class="about-me-container">
+          <div class="about-me-text-container">
+            <h2>About Me</h2>
+            <p>
+              Hi! I'm blindmonky, an Electrical Engineer, Cybersecurity Admin
+              and a Front-End Developer, chiefly known for my work on Charles
+              Babbage's proposed mechanical general-purpose computer, the
+              Analytical Engine.
+            </p>
+            <p>
+              I am one of the first to recognize that machines have applications
+              beyond pure calculation, and to have published the first algorithm
+              intended to be carried out by such a machine.
+            </p>
+            <p>
+              In my free time I like to read about scientific developments,
+              mathematics, and computational mathematics. I also like to take my
+              chances of winning big.
+            </p>
+            <div class="btn-card">
+              <label for="main">Add some text:</label>
+              <input type="text" id="main" class="input-main" />
+              <button id="btn">Click</button>
+            </div>
+          </div>
+          <img src="./bee.jpg" alt="Busted Pic" class="portrait" />
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <details class="project">
+          <summary class="project-title"><h3>DSP Echo Cancellor</h3></summary>
+          <img
+            src="./echoCancelDSP.jpg"
+            alt="DSP Echo Canceller"
+            class="project-image"
+          />
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Movie Recommendation System</h3>
+          </summary>
+          <img
+            src="./movieRecommendations.png"
+            alt="Movie Choices"
+            class="project-image"
+          />
+        </details>
+        <details class="project">
+          <summary class="project-title">
+            <h3>Risk Index Application</h3>
+          </summary>
+          <img
+            src="./riskIndex.png"
+            alt="Risk Index app"
+            class="project-image"
+          />
+        </details>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <i class="fab fa-microsoft"></i>
+          <i class="fab fa-git"></i>
+          <i class="fas fa-terminal"></i>
+          <i class="fas fa-universal-access"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
